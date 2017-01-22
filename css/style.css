@@ -1,0 +1,190 @@
+@font-face {
+  font-family: RobotoRegular;
+  src: url(fonts/RobotoRegular.ttf);
+   }
+
+@font-face {
+  font-family: RobotoLight;
+  src: url(fonts/RobotoLight.ttf);
+}
+
+body {
+  color: #fefefe;
+  background-color: #171717;
+}
+
+.navbar {
+  background-color: #121212;
+  border: none;
+}
+
+.navbar-brand {
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: RobotoRegular;
+}
+
+h3 {
+  text-align: center;
+  font-size: 18px;
+  font-family: RobotoRegular;
+}
+
+h2 {
+  font-size: 24px;
+  text-align: left;
+  color: #454545;
+  font-family: RobotoRegular;
+}
+
+p,h4 {
+  font-size: 18px;
+  font-family: RobotoLight;
+}
+
+ul {
+  margin-top: 20px;
+}
+
+ul li{
+  display: inline;
+  padding-left: 32px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.button {
+  border-radius: 40px;
+  padding: 14px 32px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.button:hover {
+  color: #000;
+}
+
+#clock {
+  font-size: 24px;
+}
+
+span {
+  font-size: 18px;
+}
+
+.button-orange {
+  background-color: #ffb961;
+  color: #000;
+}
+
+.sale {
+  margin: 26px 0px 26px 0px;
+}
+
+.b-gray {
+  border-radius: 28px 0 0 28px;
+  background: #454545;
+  text-decoration: line-through;
+  padding: 14px 28px;
+}
+
+.b-orange {
+  border-radius: 0 28px 28px 0;
+  background: #ffb961;
+  padding: 0;
+  padding: 14px 28px;
+  color: #121212;
+}
+
+.vacheron {
+  margin-top: 100px;
+}
+
+.vacheron-info {
+  margin-top: 50px;
+}
+
+.timer {
+  margin: 29px 0px 34px 0px;
+}
+
+.complect {
+  color: #454545;
+}
+
+.info, .comments {
+  background-color: #232323;
+}
+
+.tcenter {
+  text-align: center;
+}
+
+.info {
+  margin-top: 140px;
+}
+
+.info-p-one {
+  margin-top: 80px;
+}
+
+.info-p-two {
+  margin-top: 60px;
+}
+
+.info-p-tree {
+  margin-top: 47px;
+}
+
+.info p {
+  font-size: 14px;
+  text-align: center;
+}
+
+.info h3 {
+  color: #454545;
+}
+
+.delivery h2, .comments h2, .info h2 {
+  color: #454545;
+  padding: 48px 0px 60px 0px;
+  text-align: center;
+}
+
+.delivery p {
+  margin-top: 14px;
+  font-size: 14px;
+}
+
+.comments {
+  margin-top: 80px;
+}
+
+.comments h2 {
+  text-align: center;
+}
+
+.commnets p, .comments h3 {
+  text-align: left;
+}
+
+.comments p {
+  font-size: 14px;
+}
+
+.slider-img {
+  margin: 20px 0px 20px 160px;
+}
+
+.info-watch p {
+  font-size: 14px;
+}
+
+.button-orange-bg {
+  border: 1px solid #ffb961;
+  color: #ffb961;
+}
