@@ -9,7 +9,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="col-lg-1 col-lg-offset-1">
         <a href="#" class="navbar-brand">
@@ -18,9 +18,9 @@
         </div>
         <div class="col-lg-4 col-md-offset-5 menu">
           <ul>
-            <li>Инфо</li>
-            <li>Доставка</li>
-            <li>Отзывы</li>
+            <li><a href="#s-info">Инфо</a></li>
+            <li><a href="#s-delivery">Доставка</a></li>
+            <li><a href="#s-comments">Отзывы</a></li>
           </ul>
         </div>
       </div>
@@ -30,11 +30,11 @@
       <div class="container vacheron">
       <div class="col-lg-5 col-lg-offset-2 vacheron-info">
         <h1>VACHERON CONSTANTIN</h1>
-        <p>Vacheron Constantin это настоящее произведение искусства. Эти часы являются одним из самых старых брендов в своей области, который прошел века и держится на самой вершине Олимпа.</p>
+        <p class="vacheron-p">Vacheron Constantin это настоящее произведение искусства. Эти часы являются одним из самых старых брендов в своей области, который прошел века и держится на самой вершине Олимпа.</p>
         <h4>До конца акции осталось</h4>
         <p id="clock"></p>
         <div class="sale">
-        <a href="" class="button-orange button">Заказать</a>
+        <a href="" class="button-orange button" data-toggle="modal" data-target="#myModal">Заказать</a>
         <span class="b-gray">110 p.</span>
         <span class="b-orange">55 p.</span>
         </div>
@@ -46,7 +46,7 @@
       </div>
     </div>
 
-  <div class="info">
+  <div class="info" id="s-info">
     <div class="container">
       <div class="row">
         <h2>Технические характеристики</h2>
@@ -66,7 +66,7 @@
         <div class="col-lg-3">
           <div class="info-p-one">
             <h3>Циферблат</h3>
-            <p>Сапфировое стекло отличается блеском и твердостью, его практически невозможно поцарапать. Антибликовое покрытие позволит увидеть время даже в самый солнечный день </p>
+            <p>Сапфировое стекло отличается блеском и твердостью, его практически невозможно поцарапать. Антибликовое покрытие позволит увидеть время даже в самый солнечный день.</p>
           </div>
           <div class="info-p-tree">
             <h3>Механизм</h3>
@@ -77,7 +77,7 @@
     </div>
   </div>
 
-  <div class="delivery">
+  <div class="delivery" id="s-delivery">
     <div class="container">
       <div class="row">
         <h2>Доставка и оплата</h2>
@@ -100,7 +100,7 @@
     </div>
   </div>
 
-  <div class="comments">
+  <div class="comments" id="s-comments">
     <div class="container">
       <h2>Отзывы покупателей</h2>
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -149,11 +149,11 @@
 
 <!-- Left and right controls -->
 <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+<span class="glyphicon glyphicon-menu-left gm" aria-hidden="true"></span>
 <span class="sr-only">Previous</span>
 </a>
 <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+<span class="glyphicon glyphicon-menu-right gm" aria-hidden="true"></span>
 <span class="sr-only">Next</span>
 </a>
 </div>
@@ -166,21 +166,72 @@
   <div class="info-watch">
     <div class="container">
       <div class="row">
-        <div class="col-lg-4 col-lg-offset-2">
+        <div class="info-watch-text">
+        <div class="col-lg-4 col-lg-offset-2 we">
           <h2>Почему выбирают нас?</h2>
+          <div class="watch-text">
           <p>Создание циферблата - это целое искусство, в котором не обойтись без художественного мастерства и самых новых технологий. </p>
           <p>Производитель  создал дизайн - подобие совершенства, на оторое уже многие годы равняются все остальные часовые компании.Часы Vacheron Constantin Geneve на сегодняшний день являются показателем успеха современного мужчины. Корпус часов обладает повышенной устойчивостью к коррозии и сохраняет стойкость цвета в течение многих десятков лет. Их поверхность не восприимчива к царапинам, ударам и не чувствительна к воздействию света и морской воды.</p>
-          <a href="" class="button-orange-bg button">Заказать</a>
+          </div>
+          <a href="" class="button-orange-bg button" data-toggle="modal" data-target="#myModal">Заказать</a>
         </div>
         <div class="col-lg-3 col-lg-offset-1">
           <img src="css/img/watch-3.png" alt="watch-three">
         </div>
       </div>
+      </div>
     </div>
   </div>
+
+<div class="footer">
+    <p>Продажа часов VACHERON CONSTANTIN</p>
+</div>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content tcenter">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="col-lg-5">
+          <img src="css/img/watch-4.png" alt="Modal-Watch" class="Modal-Watch">
+        </div>
+        <h2>VACHERON CONSTANTIN GENEVE</h2>
+        <p>Заполните форму ниже для онлайн заказа</p>
+        <input type="text" placeholder="Введите Ваше имя">
+        <input type="text" placeholder="Введите Ваш телефон">
+        <div class="modal-sale">
+          <a href="" class="button button-orange">Заказать</a>
+        </div>
+
+        <div class="modal-info">
+          <div class="garant col-lg-4">
+            <img src="css/img/ico4.png" alt="">
+            <p class="info-p">Гарантия качества</p>
+            <p>Покупая наши часы выполучаете гарантию на год</p>
+          </div>
+          <div class="delivery-modal col-lg-3">
+            <img src="css/img/ico5.png" alt="">
+            <p class="info-p">Доставка Беларуси</p>
+            <p>Осуществляется доставка во все города РБ</p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+
+      </div>
+    </div>
+
+  </div>
+</div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/timer.js"></script>
+    <script src="js/scroll.js"></script>
   </body>
 </html>

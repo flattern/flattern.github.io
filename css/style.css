@@ -8,6 +8,10 @@
   src: url(fonts/RobotoLight.ttf);
 }
 
+*:focus {
+    outline: none;
+}
+
 body {
   color: #fefefe;
   background-color: #171717;
@@ -24,6 +28,7 @@ body {
 
 h1 {
   font-family: RobotoRegular;
+  font-size: 36px;
 }
 
 h3 {
@@ -44,6 +49,7 @@ p,h4 {
   font-family: RobotoLight;
 }
 
+
 ul {
   margin-top: 20px;
 }
@@ -53,22 +59,47 @@ ul li{
   padding-left: 32px;
 }
 
+li > a {
+  color: white;
+}
+
+li > a:hover {
+  color: white;
+  border-bottom: 1px solid #ffb961;
+}
+
+li > a:focus {
+  color: white;
+}
+
 a:hover {
   text-decoration: none;
 }
 
 .button {
   border-radius: 40px;
-  padding: 14px 32px;
+  padding: 12px 38px;
   font-size: 18px;
   text-decoration: none;
+  outline: none;
 }
 
 .button:hover {
   color: #000;
+  outline: none;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.vacheron-p {
+  font-weight: 300;
+  margin: 30px 0px;
 }
 
 #clock {
+  font-family: RobotoRegular;
   font-size: 24px;
 }
 
@@ -82,22 +113,24 @@ span {
 }
 
 .sale {
-  margin: 26px 0px 26px 0px;
+  margin: 34px 0px 34px 0px;
 }
 
 .b-gray {
   border-radius: 28px 0 0 28px;
   background: #454545;
   text-decoration: line-through;
-  padding: 14px 28px;
+  padding: 12px 14px;
+  margin-left: 21px;
 }
 
 .b-orange {
   border-radius: 0 28px 28px 0;
   background: #ffb961;
   padding: 0;
-  padding: 14px 28px;
+  padding: 12px 17px;
   color: #121212;
+  margin-left: -4px;
 }
 
 .vacheron {
@@ -105,7 +138,7 @@ span {
 }
 
 .vacheron-info {
-  margin-top: 50px;
+  margin-top: 24px;
 }
 
 .timer {
@@ -126,6 +159,7 @@ span {
 
 .info {
   margin-top: 140px;
+  line-height: 16px;
 }
 
 .info-p-one {
@@ -137,10 +171,10 @@ span {
 }
 
 .info-p-tree {
-  margin-top: 47px;
+  margin-top: 46px;
 }
 
-.info p {
+.info p, .footer p {
   font-size: 14px;
   text-align: center;
 }
@@ -158,10 +192,15 @@ span {
 .delivery p {
   margin-top: 14px;
   font-size: 14px;
+  line-height: 16px;
 }
 
 .comments {
   margin-top: 80px;
+}
+
+.gm {
+  margin-top: 56px;
 }
 
 .comments h2 {
@@ -177,14 +216,114 @@ span {
 }
 
 .slider-img {
-  margin: 20px 0px 20px 160px;
+  margin: 20px 0px 20px 200px;
 }
 
 .info-watch p {
   font-size: 14px;
+  line-height: 18px;
+}
+
+.item h3, .itme p {
+  margin-top: 28px;
 }
 
 .button-orange-bg {
   border: 1px solid #ffb961;
   color: #ffb961;
+}
+
+.button-orange-bg:hover {
+  background-color: #ffb961;
+}
+
+.button-orange-bg:focus {
+  color: #ffb961;
+}
+
+.carousel {
+  margin-bottom: 86px;
+}
+
+.info-watch-text {
+  margin-top: 90px;
+}
+
+.watch-text {
+  margin: 30px 0px 37px 0px;
+}
+
+.we {
+  margin-top: 32px;
+}
+
+.footer {
+  background-color: #121212;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  padding: 20px 0px 12px 0px;
+  margin-top: 90px;
+}
+
+.modal-header {
+  background: linear-gradient(-80deg, #232323 56.4%, #171717 40%,#171717 );
+}
+
+.modal-body {
+  background: linear-gradient(-80deg, #232323 59.6%, #171717 50%,#171717 );
+}
+
+.modal-footer {
+  background: linear-gradient(-80deg, #232323 64.4%, #171717 50%,#171717 );
+}
+
+.modal p, .modal h1 {
+  font-family: RobotoLight;
+}
+
+.modal h2 {
+  text-align: center;
+  color: white;
+}
+
+.Modal-Watch {
+  margin-right: 24px;
+}
+
+.modal p {
+  font-size: 14px;
+}
+
+.close {
+  color: white;
+}
+
+.modal-info {
+  margin-top: 26px;
+}
+
+
+input {
+  background-color: #171717;
+  border-radius: 40px;
+  color: #fefefe;
+  padding: 12px 62px;
+  border: none;
+  margin: 8px 0px 8px 0px;
+  text-align: center;
+  outline: none;
+}
+
+.modal-sale {
+  margin: 18px 0px;
+}
+
+.modal-info {
+  margin-top: 80px;
+}
+
+.info-p {
+  margin: 10px 0px 10px 0px;
 }
