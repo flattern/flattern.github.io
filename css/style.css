@@ -164,6 +164,18 @@ span {
   margin-top: 100px;
 }
 
+.v-watch {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .v-watch {
+    display: block;
+    width: 40%;
+    height: 40%;
+  }
+}
+
 .vacheron-info {
   margin-top: 24px;
 }
@@ -401,7 +413,7 @@ input {
 }
 
 @media screen and (max-width: 767px) {
-  .info-watch img, .vacheron img  {
+  .info-watch img, .watch-1 {
     display: none;
   }
 }
