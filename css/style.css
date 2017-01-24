@@ -121,7 +121,7 @@ span {
 }
 
 @media screen and (max-width: 767px) {
-   .vacheron img, .info img, .modal-watch-img img {
+   .info img, .modal-watch-img img {
      height: 50%;
      width: 50%;
      display: block;
@@ -401,7 +401,7 @@ input {
 }
 
 @media screen and (max-width: 767px) {
-  .info-watch img  {
+  .info-watch img, .vacheron img  {
     display: none;
   }
 }
