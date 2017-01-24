@@ -40,7 +40,7 @@ h3 {
 h2 {
   font-size: 24px;
   text-align: left;
-  color: #454545;
+  color: #666666;
   font-family: RobotoRegular;
 }
 
@@ -72,8 +72,12 @@ li > a:focus {
   color: white;
 }
 
-a:hover {
+a:hover, a:focus {
   text-decoration: none;
+}
+
+button {
+  border: none;
 }
 
 .button {
@@ -116,6 +120,29 @@ span {
   margin: 34px 0px 34px 0px;
 }
 
+@media screen and (max-width: 767px) {
+   .vacheron img, .info img, .modal-watch-img img {
+     height: 50%;
+     width: 50%;
+     display: block;
+     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .b-gray,.b-orange {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .comments img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+
 .b-gray {
   border-radius: 28px 0 0 28px;
   background: #454545;
@@ -141,12 +168,16 @@ span {
   margin-top: 24px;
 }
 
+.watch-1 {
+  margin-top: 6px;
+}
+
 .timer {
   margin: 29px 0px 34px 0px;
 }
 
 .complect {
-  color: #454545;
+  color: #666666;
 }
 
 .info, .comments {
@@ -172,6 +203,7 @@ span {
 
 .info-p-tree {
   margin-top: 46px;
+  margin-bottom: 46px;
 }
 
 .info p, .footer p {
@@ -180,11 +212,12 @@ span {
 }
 
 .info h3 {
-  color: #454545;
+  color: #666666;
+  font-family: RobotoRegular;
 }
 
 .delivery h2, .comments h2, .info h2 {
-  color: #454545;
+  color: #666666;
   padding: 48px 0px 60px 0px;
   text-align: center;
 }
@@ -265,6 +298,7 @@ span {
   text-align: center;
   padding: 20px 0px 12px 0px;
   margin-top: 90px;
+  color: #666;
 }
 
 .modal-header {
@@ -288,9 +322,6 @@ span {
   color: white;
 }
 
-.Modal-Watch {
-  margin-right: 24px;
-}
 
 .modal p {
   font-size: 14px;
@@ -326,4 +357,63 @@ input {
 
 .info-p {
   margin: 10px 0px 10px 0px;
+}
+
+.fl {
+  font-size: 14px;
+  color: #666;
+}
+
+.fl:hover {
+  border-bottom: 1px solid #ffb961;
+  cursor: pointer;
+  color: white;
+}
+
+@media screen and (max-width: 767px) {
+  .comments h3, .item p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .comments h3, .item p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pd {
+    margin: 46px 0px 46px 0px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .delivery h2,.info h2 {
+    padding: 14px 0px 7px 0px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .info-p-one  {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .info-watch img  {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sale-button::after  {
+    content: "за 55р.";
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .modal-header,.modal-body,.modal-footer {
+    background: #232323;
+  }
 }

@@ -9,6 +9,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="col-lg-1 col-lg-offset-1">
@@ -34,14 +35,14 @@
         <h4>До конца акции осталось</h4>
         <p id="clock"></p>
         <div class="sale">
-        <a href="" class="button-orange button" data-toggle="modal" data-target="#myModal">Заказать</a>
+        <a href="" class="button-orange button sale-button" data-toggle="modal" data-target="#myModal">Заказать</a>
         <span class="b-gray">110 p.</span>
         <span class="b-orange">55 p.</span>
         </div>
         <div class="complect">* Спешите, из 200 комплектов осталось всего 17</div>
       </div>
       <div class="col-lg-3">
-        <img src="css/img/watch-1.png" alt="watch">
+        <img src="css/img/watch-1.png" alt="watch" class="watch-1">
       </div>
       </div>
     </div>
@@ -81,17 +82,17 @@
     <div class="container">
       <div class="row">
         <h2>Доставка и оплата</h2>
-        <div class="col-lg-2 col-lg-offset-2 tcenter">
+        <div class="col-lg-2 col-lg-offset-2 pd tcenter">
           <img src="css/img/ico1.png" alt="Заявка">
           <h4>Оставьте заявку</h4>
           <p>Воспользуйтесь формой заказа и оставьте Ваши имя и телефон</p>
         </div>
-        <div class="col-lg-2 col-lg-offset-1 tcenter">
+        <div class="col-lg-2 col-lg-offset-1 pd tcenter">
           <img src="css/img/ico2.png" alt="Подтверждение">
           <h4>Подтвердите заказ</h4>
           <p>Наш менеджер свяжется с Вами и уточнит адрес доставки</p>
         </div>
-        <div class="col-lg-2 col-lg-offset-1 tcenter">
+        <div class="col-lg-2 col-lg-offset-1 pd tcenter">
           <img src="css/img/ico3.png" alt="Получение">
           <h4>Получите товар</h4>
           <p>Заберите посылку и оплатите заказ при получении</p>
@@ -185,6 +186,7 @@
 
 <div class="footer">
     <p>Продажа часов VACHERON CONSTANTIN</p>
+    <p>Designed by <a href="https://t.me/midcat" class="fl">Flattern</a></p>
 </div>
 
 <!-- Modal -->
@@ -197,15 +199,17 @@
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
       <div class="modal-body">
-        <div class="col-lg-5">
+        <div class="col-lg-5 modal-watch-img">
           <img src="css/img/watch-4.png" alt="Modal-Watch" class="Modal-Watch">
         </div>
         <h2>VACHERON CONSTANTIN GENEVE</h2>
         <p>Заполните форму ниже для онлайн заказа</p>
-        <input type="text" placeholder="Введите Ваше имя">
-        <input type="text" placeholder="Введите Ваш телефон">
+        <form id="form">
+        <input type="text" name="name" placeholder="Введите Ваше имя">
+        <input type="text" name="phone" placeholder="Введите Ваш телефон" required>
         <div class="modal-sale">
-          <a href="" class="button button-orange">Заказать</a>
+        <button class="button button-orange">Заказать</button>
+        </form>
         </div>
 
         <div class="modal-info">
@@ -222,16 +226,17 @@
         </div>
       </div>
       <div class="modal-footer">
-
       </div>
     </div>
-
   </div>
 </div>
+
+<!--designed by flattern -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/timer.js"></script>
     <script src="js/scroll.js"></script>
+    <script src="js/common.js"></script>
   </body>
 </html>
