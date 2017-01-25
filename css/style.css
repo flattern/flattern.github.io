@@ -431,7 +431,7 @@ input {
 
 @media screen and (max-width: 767px) {
   .sale-button::after  {
-    content: "за 55р.";
+    content: " за 55р.";
   }
 }
 
