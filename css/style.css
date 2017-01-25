@@ -33,7 +33,7 @@ h1 {
 
 h3 {
   text-align: center;
-  font-size: 24px;
+  font-size: 18px;
   font-family: RobotoRegular;
 }
 
@@ -149,20 +149,19 @@ span {
   text-decoration: line-through;
   padding: 12px 14px;
   margin-left: 21px;
-  font-family: RobotoLight;
 }
 
 .b-orange {
   border-radius: 0 28px 28px 0;
   background: #ffb961;
   padding: 0;
-  padding: 13px 17px;
+  padding: 12px 17px;
   color: #121212;
   margin-left: -4px;
 }
 
 .vacheron {
-  margin-top: 140px;
+  margin-top: 126px;
 }
 
 .v-watch {
@@ -253,10 +252,6 @@ span {
 
 .gm {
   margin-top: 56px;
-}
-
-.delivery h4 {
-  font-family: RobotoRegular;
 }
 
 .comments h2 {
