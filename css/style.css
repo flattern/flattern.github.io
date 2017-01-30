@@ -377,6 +377,11 @@ input {
   margin: 10px 0px 10px 0px;
 }
 
+.glyphicon {
+  font-size: 14px;
+  cursor: default;
+}
+
 .fl {
   font-size: 14px;
   color: #666;
@@ -437,7 +442,8 @@ input {
 }
 
 @media screen and (max-width: 767px) {
-  ul li {
-    padding-left: 10px;
+  ul li, .glyphicon {
+    padding-left: 9px;
+    font-size: 10px;
   }
 }
